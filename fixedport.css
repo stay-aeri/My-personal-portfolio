@@ -1,0 +1,460 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: url('a.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+h1, h2, h3 {
+    color: #2c2c2c;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    text-shadow: 2px 2px 16px rgb(255, 255, 255);
+}
+.page1{
+    background-image: url(a.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 80px 80px;
+    height: 450px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #ffffffb5;
+    padding: 10px;
+    text-align: center;
+    gap: 75px;
+    display: flex;
+    flex-direction: column;
+}
+
+ul{
+    list-style: none;
+    display: inline;
+    float: right;
+}
+li{
+    display: inline-block;
+    padding: 0 20px;
+}
+ul li :hover{
+    color: #ffffff;
+    border-radius: 4px;
+    border: 2px solid #ffffffb5;
+    padding: 5px;
+    box-shadow: 5px 1px 10px #fcfcfc;
+    transition-duration: 0.3s;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-size: 18px;
+}
+
+
+.Me{
+    background-color: rgba(240, 240, 240, 0.308);
+    border-radius: 8px;
+    font-size: 28px;
+    color: aliceblue;
+    padding: 8px;
+    margin: 50px 100px;
+    border: 2px solid rgba(255, 255, 255, 0.473);
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}
+
+.Me:hover{
+    color: #ffffff;
+    padding: 12px;
+    box-shadow: 5px 1px 10px #fcfcfc;
+    transition-duration: 0.3s;
+}
+
+.page2 {
+    padding: 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.205);
+    text-align: center;
+}
+.elements {
+    margin: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    background-color: #fac8e5;
+    box-shadow: 0 0 10px #ffffffb5;
+    padding: 20px 40px 40px 40px;
+    border-radius: 20px;
+}
+.elements img {
+    width: 250px;
+    border-radius: 200px;
+}
+.text h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+.text p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+button.CV {
+    background-color: #f87b7b;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.page3 {
+    padding: 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.srvs {
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.srvs div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    background: #fac8e5;
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+.srvs div:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 0 12px #ffffffb5;
+}
+.srvs img {
+    width: 60px;
+    margin-bottom: 1rem;
+}
+
+.page4 {
+    padding: 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.205);
+}
+.page4 h2 {
+    margin-bottom: 2rem;
+}
+.page4 .wrk{
+    text-align: center;
+    font-size: 18px;
+    color: #2c2c2c;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 30px;
+}
+.page4 .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding:20px 40px 40px 40px;
+}
+.page4 .project {
+    text-align: center;
+    background: #fac8e5;
+    border-radius: 20px;
+    padding: 1rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    box-shadow: 0 0 10px #ffffffb5;
+    transition: transform 0.3s ease;
+}
+.page4 .project img{
+  height: 150px;
+  width: 265px;
+  border-radius: 20px;
+}
+.page4 .project:hover {
+  transform: scale(1.1); /* 1.1 = 10% zoom */
+}
+.project a{
+    color: #2c2c2c;
+    font-family: 'Poppins',sans-serif;
+    font-size:medium;
+}
+.page5 {
+    padding: 4rem 2rem;
+    background-color: rgba(255, 255, 255, 0.205);
+    text-align: center;
+}
+
+.forms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.forms input {
+    width: 300px;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    color: #00000094;
+}
+.forms textarea{
+  width: 300px;
+  height: 80px;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  color: #00000094;
+}
+.forms button{
+  width: 100px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: rgba(240, 240, 240, 0.308);
+  border: 0px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.forms button:hover{
+  color: #ffffff;
+  padding: 12px;
+  box-shadow: 0px 0px 10px #fcfcfc;
+  transition-duration: 0.3s;
+}
+.sm img {
+    width: 30px;
+    margin: 0 10px;
+    transition: transform 0.3s ease;
+}
+.sm img:hover {
+    transform: scale(1.2);
+}
+footer p {
+    margin-top: 4rem;
+    color: #333;
+    font-size: 0.9rem;
+}
+html {
+    scroll-behavior: smooth;
+  }
+
+
+
+  /* Scroll to top button base style */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #aa5ecf;
+  color: white;
+  font-size: 24px;
+  padding: 12px 18px;
+  border-radius: 50%;
+  text-decoration: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+/* Show the button when the page is scrolled down */
+html:has(:target) .scroll-to-top {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+
+
+
+  @media screen and (max-width: 1024px) {
+    nav ul {
+        float: none;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .page1 {
+        margin: 40px 20px;
+        padding: 30px;
+        height: auto;
+    }
+
+    .page2 .elements {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .page3 .srvs {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .forms {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .page1 {
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .page1 h1 {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+
+  .Me {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+/*  .navbar .hamburger {
+    display: block;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+  }
+
+  .side-menu {
+    right: 0 !important;
+  }*/
+}
+
+
+
+
+/*  
+
+  /* === Hamburger for mobile === 
+.hamburger {
+    display: none;
+    font-size: 32px;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+    position: fixed;
+    top: 10px;
+    right: 20px;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 102vh;
+    background-color: #aa5ecf;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+
+
+  /* Hide checkbox 
+#menu-toggle {
+  display: none;
+}
+
+/* Hamburger icon 
+.hamburger {
+  display: block;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001;
+  position: fixed;
+  top: 10px;
+  right: 20px;
+}
+
+/* Side menu 
+.side-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 250px;
+  height: 100vh;
+  background-color: #aa5ecf;
+  padding-top: 60px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+/* Overlay 
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: 999;
+}
+
+/* Show menu when checked 
+#menu-toggle:checked ~ .side-menu {
+  right: 0;
+}
+
+#menu-toggle:checked ~ .overlay {
+  display: block;
+}
+
+/* Sidebar links 
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+.side-menu ul li {
+  padding: 20px;
+  text-align: center;
+}
+.side-menu ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.side-menu ul li a:hover {
+  background: rgba(255,255,255,0.1);
+}
+*/
+  

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fixedport.css">
+    <title>Raya Nesrine</title>
+    <link rel="icon" type="image/x-icon" href="me.ico">
+</head>
+<body>
+    <a id="top"></a>
+    <div class="page1" id="page1">
+        <nav class="navbar">
+            <ul class="main-nav">
+              <li><a href="#page1">HOME</a></li>
+              <li><a href="#page2">ABOUT</a></li>
+              <li><a href="#page3">MY SERVICES</a></li>
+              <li><a href="#page4">WORK</a></li>
+              <li><a href="#page5">CONTACT</a></li>
+            </ul>
+          
+            <!--<input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="hamburger">&#9776;</label>
+          
+            <div class="side-menu">
+              <ul>
+                <li><a href="#page1">HOME</a></li>
+                <li><a href="#page2">ABOUT</a></li>
+                <li><a href="#page3">MY SERVICES</a></li>
+                <li><a href="#page4">WORK</a></li>
+                <li><a href="#page5">CONTACT</a></li>
+              </ul>
+            </div>
+            <div class="overlay"></div>-->
+          </nav>               
+        <header>
+            <h1>Hi, I'm Nesrine <br> Turning Code into Creativity</h1>
+            <a href="#page5" class="Me">Get In Touch</a>
+        </header>
+    </div>
+
+    <div class="page2" id="page2">
+        <h2>About Me</h2>
+        <div class="elements">
+            <img src="ChatGPT Image 13 avr. 2025, 14_17_33.png">
+            <div class="text">
+                <h3>A Creative Freelancer and Front-end Developer</h3>
+                <p>My name is Raya Nesrine. As a freelancer, I’m all about building clean,<br> visually delightful front-end experiences.. I have acquired the<br> 
+                    skills necessary to build great and premium static websites.</p>
+                <button class="CV" onclick="window.open('your-cv.pdf')">DOWNLOAD CV</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="page3" id="page3">
+
+        <h2>My Services</h2>
+
+        <div class="srvs">
+
+            <div class="srv1">
+                <img src="/web-programming (1).png">
+                <h4>Friendly Design</h4>
+                <p>Designs that speak your brand and serve your users.</p>
+            </div>
+
+            <div class="srv2">
+                <img src="/laptop.png">
+                <h4>Web Developement</h4>
+                <p>Turning ideas into fully functional digital experiences.</p>
+            </div>
+
+            <div class="srv3">
+                <img src="/web-programming.png">
+                <h4>Clean Coded</h4>
+                <p>Behind every smooth site is clean, optimized code.</p>
+            </div>
+
+        </div>
+
+    </div>
+
+<!--
+    <div class="page4">
+        <h2>My Work</h2>
+        <div class="wrk">
+            <p>Here are some of my favorite projects that showcase<br> my skills and design sense</p>
+        </div>
+    </div>
+-->
+<div class="page4" id="page4">
+    <h2>My Work</h2>
+    <p class="wrk">Here are some of my favorite projects that showcase<br> my skills and design sense</p>
+    <div class="project-grid">
+      <div class="project"><a href="">
+        <img src="project1.png" alt="Project 1 Screenshot">
+        <h4>Landing Page</h4>
+        <p>A sleek responsive landing page for a modern product launch.</p></a>
+      </div>
+      <div class="project"><a href="">
+        <img src="pooo.PNG" alt="Project 2 Screenshot">
+        <h4>Portfolio Website</h4>
+        <p>A personal branding portfolio designed for creative professionals.</p></a>
+      </div>
+      <div class="project"><a href="">
+        <img src="shop.PNG" alt="Project 3 Screenshot">
+        <h4>E-Commerce UI</h4>
+        <p>Frontend layout for an online store built with HTML and CSS.</p></a>
+      </div>
+    </div>
+  </div>
+    <div class="page5" id="page5">
+        <h2>Contact Me</h2>
+        <div class="all">
+            <div class="sm">
+                <a class="icon" id="fb" href="" target="_blank"><img src="facebook.png"></a>
+                <a class="icon" id="ig" href="" target="_blank"><img src="instagram.png"></a>
+                <a class="icon" id="tt" href="" target="_blank"><img src="tik-tok.png"></a>
+                <a class="icon" id="li" href="" target="_blank"><img src="linkedin.png"></a>
+                <a class="icon" id="X" href="" target="_blank"><img src="twitter.png"></a>
+            </div>
+            <div id="form-message" style="margin-top: 10px; font-weight: bold;"></div>
+            <form class="forms" id="forms">
+                <input type="text" name="name" placeholder="Name" required />
+                <input type="email" name="email" placeholder="Email" required />
+                <textarea name="message" placeholder="Message" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <footer>
+            <p>copyright Nesrine</p>
+        </footer>
+    </div>
+    <a href="#top" class="scroll-to-top">↑</a>
+
+
+    <!-- EmailJS script -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("Zl_8eh2JEdqpCkXAT");
+    })();
+  
+    document.getElementById("forms").addEventListener("submit", function (e) {
+      e.preventDefault();
+  
+      const messageBox = document.getElementById("form-message");
+  
+      emailjs.sendForm("service_0fprfqo", "template_837tric", this)
+        .then(() => {
+          messageBox.textContent = "✅ Message sent successfully!";
+          messageBox.style.color = "green";
+          this.reset();
+        }, (error) => {
+          messageBox.textContent = "❌ Failed to send message. Please try again.";
+          messageBox.style.color = "red";
+        });
+    });
+  </script>  
+</body>
+</html>
